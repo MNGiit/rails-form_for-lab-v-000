@@ -21,6 +21,6 @@ class SchoolClassesController < ApplicationController
   end
   
   def update
-    
+    @school_class
   end  
 end
