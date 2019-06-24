@@ -22,9 +22,14 @@ class SchoolClassesController < ApplicationController
   
   def update
     @school_class = SchoolClass.find
-    binding.pry
     @school_class.update(school_class_params)
     
     redirect_to school_class_path @school_class
-  end  
+  end
+  
+  private
+  
+  def school_class_params
+    params.require(:school_class).permit!
+  end
 end
