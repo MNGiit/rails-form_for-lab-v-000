@@ -23,4 +23,8 @@ class StudentsController < ApplicationController
   def update
     
   end
+  
+  def student_params
+    
+  end
 end
